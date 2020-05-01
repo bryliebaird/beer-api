@@ -1,0 +1,23 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.card-title {
+    display: inline;
+    background-color: pink;
+    float: right;
+    
+}
+
+.card-text {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    
+}
+
+.beerImage {
+    background-color: blueviolet;
+    display: block;
+}
