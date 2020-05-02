@@ -1,0 +1,268 @@
+<%- include("partials/header.ejs") %>
+
+<!--Search For Beer-->
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 mx-auto">
+            <div class="form">
+                <div class="input-group mb-3">
+                    <input type="text"class="form-control" placeholder="Search for Beer..." aria-label="beer-search" aria-describedby="basic-addon2">
+                    <div class="input-group-append">
+                      <button id="search-beer" class="btn btn-primary" type="button">Search</button>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+</div>
+    
+
+
+<!--Beer Cards-->
+
+    <!--Beer Cards Row #1-->
+    <div class="container mb-3">
+        <div class="row">
+
+        <!--Beer Card #1-->
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-end mb-3">
+                            <a href="/favorites">
+                                <i id="fav-btn" class="far fa-star"></i>
+                            </a>
+                        </div>
+                        <div class="d-flex">
+                            <img src="<%= beerImage %>" id="beerImage" class="h-25 mr-5 d-inline-block justify-content-left" alt="Beer Image" height="100" width="42">
+                            <p id="card-text">
+                                <strong><%= beerName%></strong> 
+                                <br> 
+                                <%= beerDescription%> 
+                            </p>
+                        </div>
+                    </div>   
+                </div>
+            </div>
+        
+        <!--Beer Card #2-->
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-end mb-3">
+                            <a href="/favorites">
+                                <i id="fav-btn" class="far fa-star"></i>
+                            </a>
+                        </div>
+                        <div class="d-flex">
+                            <img src="<%= beerImage %>" id="beerImage" class="h-25 mr-5 d-inline-block justify-content-left" alt="Beer Image" height="100" width="42">
+                            <p id="card-text">
+                                <strong><%= beerName%></strong> 
+                                <br> 
+                                <%= beerDescription%> 
+                            </p>
+                        </div>
+                    </div>   
+                </div>
+            </div>
+
+        <!--Beer #3-->
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <div class="d-flex justify-content-end mb-3">
+                        <a href="/favorites">
+                            <i id="fav-btn" class="far fa-star"></i>
+                        </a>
+                    </div>
+                    <div class="d-flex">
+                        <img src="<%= beerImage %>" id="beerImage" class="h-25 mr-5 d-inline-block justify-content-left" alt="Beer Image" height="100" width="42">
+                        <p id="card-text">
+                            <strong><%= beerName%></strong> 
+                            <br> 
+                            <%= beerDescription%> 
+                        </p>
+                    </div>
+                </div>   
+            </div>
+        </div>
+
+
+        </div>
+    </div>
+    
+    <!--Beer Card Row 2-->
+    <div class="container mb-3">
+        <div class="row">
+
+            <!--Beer Card #4-->
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-end mb-3">
+                            <a href="/favorites">
+                                <i id="fav-btn" class="far fa-star"></i>
+                            </a>
+                        </div>
+                        <div class="d-flex">
+                            <img src="<%= beerImage %>" id="beerImage" class="h-25 mr-5 d-inline-block justify-content-left" alt="Beer Image" height="100" width="42">
+                            <p id="card-text">
+                                <strong><%= beerName%></strong> 
+                                <br> 
+                                <%= beerDescription%> 
+                            </p>
+                        </div>
+                    </div>   
+                </div>
+            </div>
+
+            
+        
+        <!--Beer Card #5-->
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <div class="d-flex justify-content-end mb-3">
+                        <a href="/favorites">
+                            <i id="fav-btn" class="far fa-star"></i>
+                        </a>
+                    </div>
+                    <div class="d-flex">
+                        <img src="<%= beerImage %>" id="beerImage" class="h-25 mr-5 d-inline-block justify-content-left" alt="Beer Image" height="100" width="42">
+                        <p id="card-text">
+                            <strong><%= beerName%></strong> 
+                            <br> 
+                            <%= beerDescription%> 
+                        </p>
+                    </div>
+                </div>   
+            </div>
+        </div>
+
+
+        <!--Beer #6-->
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <div class="d-flex justify-content-end mb-3">
+                        <a href="/favorites">
+                            <i id="fav-btn" class="far fa-star"></i>
+                        </a>
+                    </div>
+                    <div class="d-flex">
+                        <img src="<%= beerImage %>" id="beerImage" class="h-25 mr-5 d-inline-block justify-content-left" alt="Beer Image" height="100" width="42">
+                        <p id="card-text">
+                            <strong><%= beerName%></strong> 
+                            <br> 
+                            <%= beerDescription%> 
+                        </p>
+                    </div>
+                </div>   
+            </div>
+        </div>
+
+            
+        </div>
+    </div>
+
+    <!--Beer Row #3-->
+    <div class="container mb-3">
+        <div class="row">
+
+            <!--Beer Card #7-->
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-end mb-3">
+                            <a href="/favorites">
+                                <i id="fav-btn" class="far fa-star"></i>
+                            </a>
+                        </div>
+                        <div class="d-flex">
+                            <img src="<%= beerImage %>" id="beerImage" class="h-25 mr-5 d-inline-block justify-content-left" alt="Beer Image" height="100" width="42">
+                            <p id="card-text">
+                                <strong><%= beerName%></strong> 
+                                <br> 
+                                <%= beerDescription%> 
+                            </p>
+                        </div>
+                    </div>   
+                </div>
+            </div>
+
+        
+        <!--Beer Card #8-->
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <div class="d-flex justify-content-end mb-3">
+                        <a href="/favorites">
+                            <i id="fav-btn" class="far fa-star"></i>
+                        </a>
+                    </div>
+                    <div class="d-flex">
+                        <img src="<%= beerImage %>" id="beerImage" class="h-25 mr-5 d-inline-block justify-content-left" alt="Beer Image" height="100" width="42">
+                        <p id="card-text">
+                            <strong><%= beerName%></strong> 
+                            <br> 
+                            <%= beerDescription%> 
+                        </p>
+                    </div>
+                </div>   
+            </div>
+        </div>
+
+
+        <!--Beer #9-->
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <div class="d-flex justify-content-end mb-3">
+                        <a href="/favorites">
+                            <i id="fav-btn" class="far fa-star"></i>
+                        </a>
+                    </div>
+                    <div class="d-flex">
+                        <img src="<%= beerImage %>" id="beerImage" class="h-25 mr-5 d-inline-block justify-content-left" alt="Beer Image" height="100" width="42">
+                        <p id="card-text">
+                            <strong><%= beerName%></strong> 
+                            <br> 
+                            <%= beerDescription%> 
+                        </p>
+                    </div>
+                </div>   
+            </div>
+        </div>
+
+            
+        </div>
+    </div>
+
+    <br>
+
+
+
+
+
+<!-- 
+    <div class="row">
+        <div class="col-lg-4">
+            <div id="beerOne" class="card mb-3" style="width: 18rem;">
+                <div class="card-body">
+                    <img src="<%= beerImage %>" class="beerImage" alt="Beer Image" height="100" width="42">
+                    <p class="card-title"><strong><%= beerName%></strong></p>
+                    <p class="card-text"><%= beerDescription%></p>
+                    <a href="#" class="btn btn-primary">Save Beer</a>
+                </div>
+            </div>
+        </div>
+   <div class="col-lg-4">
+ 
+
+ -->
+
+
+<%- include("partials/footer.ejs") %>
+
+
+<%- include("partials/footer.ejs") %>

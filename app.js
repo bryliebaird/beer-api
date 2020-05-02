@@ -29,11 +29,8 @@ let BeerModel = mongoose.model("Beer", beerSchema);
 app.set("view engine", "ejs");
 app.use(express.static('public'));
 
-app.get('/', function(req, res){
-    res.render('home.ejs');
-})
 
-app.get('/beer', function(req, res){
+app.get('/', function(req, res){
     let url = 'https://api.punkapi.com/v2/beers';
     request(url, function(error, response, body) {
         if(!error && response.statusCode == 200) {
@@ -41,7 +38,7 @@ app.get('/beer', function(req, res){
             let name = parsedData[1].name;
             let description = parsedData[1].description;   
             let image = parsedData[1].image_url;   
-            res.render('beer.ejs', {beerName: name, beerDescription: description, beerImage: image});
+            res.render('index.ejs', {beerName: name, beerDescription: description, beerImage: image});
         } 
     })
 });

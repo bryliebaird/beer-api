@@ -1,46 +1,40 @@
-//Event Listeners Below to 'save beer to favorites' 
-let favOne = document.getElementById("beerOne");
-favOne.addEventListener("click", function(){
-    alert("Thanks for saving me to your favorites!");
-});
+//Define UI variables
+const search = document.querySelector('#search-beer');
+const favorites = document.querySelectorAll('#fav-btn');
 
-let favTwo= document.getElementById("beerTwo");
-favTwo.addEventListener("click", function(){
-    alert("Thanks for saving me to your favorites!");
-})
+//Load all Event Listeners on the Page (invoke)
+addEventListeners();
 
-let favThree = document.getElementById("beerThree");
-favThree.addEventListener("click", function(){
-    alert("Thanks for saving me to your favorites!");
-})
+//Load all Event Listeners on the Page (function def)
+function addEventListeners(e){
+    // getBeer = get any beer saved from local storage
+    document.addEventListener('DOMContentLoaded', getBeer);
+    
+    // findBeer = make request to API to find beer from search bar
+    search.addEventListener('click', findBeer);
 
-let favFour = document.getElementById("beerFour");
-favFour.addEventListener("click", function(){
-    alert("Thanks for saving me to your favorites!");
-})
+    // addFavorites = add the beer to the favorites page
+    favorites.addEventListener('click', addFavorites);
 
-let favFive = document.getElementById("beerFive");
-favFive.addEventListener("click", function(){
-    alert("Thanks for saving me to your favorites!");
-})
+}
 
-let favSix = document.getElementById("beerSix");
-favSix.addEventListener("click", function(){
-    alert("Thanks for saving me to your favorites!");
-})
+// This function will get any data saved from Local Storage from any previous sessions. This function will fire immediately when all DOM content on the page is loaded 
+function getBeer (e){
+    console.log("The getBeer function has executed");
 
-let favSeven = document.getElementById("beerSeven");
-favSeven.addEventListener("click", function(){
-    alert("Thanks for saving me to your favorites!");
-})
+}
 
-let favEight = document.getElementById("beerEight");
-favEight.addEventListener("click", function(){
-    alert("Thanks for saving me to your favorites!");
-})
+// Add beer to the favorites page when button is clicked, will also save it into local storage.
+function addFavorites(e){
+    console.log("You added something to your favorites list!");
 
-let favNine = document.getElementById("beerNine");
-favNine.addEventListener("click", function(){
-    alert("Thanks for saving me to your favorites!");
-})
+    e.preventDefault();
+}
 
+
+// User will make request to API from the search bar
+function findBeer(e){
+    console.log("The findBeer function has executed");
+
+
+}

@@ -3,21 +3,15 @@
     padding: 0px;
 }
 
-.card-title {
-    display: inline;
-    background-color: pink;
-    float: right;
-    
+
+.navbar {
+    background-color: #00d1b2;
 }
 
-.card-text {
+
+#card-text {
     white-space: nowrap;
-    text-overflow: ellipsis;
     overflow: hidden;
-    
+    text-overflow: ellipsis;
 }
 
-.beerImage {
-    background-color: blueviolet;
-    display: block;
-}
